@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	*{
+	margin:50;
+	padding:50;
+	}
+	#maindiv{
+	width:1000px;
+	height:400px;
+	background:#E5E7E9;
+	margin:0 auto;
+	}
+	#header{
+	width:1000px;
+	height:100px;
+	background:#FF7733;
+	}
+	#content{
+	width:1000px;
+	height:600px;
+	background:#E5E7E9;
+	}
+	#content input[type=="text"]{
+	width:1000px;
+	height:600px;
+	}
+	
+	</style>
+</head>
+<body>
+	<div id="maindiv">
+	
+		<div id="header">
+			<h1 style="margin-left:150px;margin-top:30px; font-family:Copperplate Gothic Bold; color:Black">Amazon Fine Food Review to Rating Prediction</h1>
+			<h5 style="margin-left:400px;margin-top:20px; font-size:30px; color:Black">Group 20</h5>
+		</div>
+		
+		<div id="content">
+			<form name="passdata",action=".", method="POST">
+				
+				<input type="text" name="query" placeholder="" style="width:660px; margin : 20px">
+				<select name="models" style="margin : 10px">
+					<option name="2class" value="2class">2-Class</option>
+					<option name= "3class" value="3class">3-Class</option>
+				</select>
+				<button type="submit" style="width:120px;">Search</button>
+				
+				
+			</form>
+			<p  id="txtarea" style="width:800px; margin:10px; font-size:20px" > 
+				
+				<h5 style=" margin:20px; font-size:25px">Text: {{a}}</h5>
+				<h5 style=" margin:20px; font-size:25px">Result: {{b}}</h5>
+
+			</p>
+			
+		</div>
+	</div>
+</body>
+</html>
+
